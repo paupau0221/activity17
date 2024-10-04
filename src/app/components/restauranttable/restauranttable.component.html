@@ -1,0 +1,23 @@
+<h2>Restaurant List</h2>
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Location</th>
+    <th>Cuisine Type</th>
+    <th>Established Year</th>
+    <th>Website or Contact</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let restaurant of restaurants">
+    <td>{{ restaurant.id }}</td>
+    <td>{{ restaurant.name }}</td>
+    <td>{{ restaurant.location }}</td>
+    <td>{{ restaurant.cuisineType }}</td>
+    <td>{{ restaurant.establishedYear }}</td>
+    <td><a href="{{ restaurant.websiteOrContact }}" target="_blank">{{ restaurant.websiteOrContact }}</a></td>
+  </tr>
+  </tbody>
+</table>

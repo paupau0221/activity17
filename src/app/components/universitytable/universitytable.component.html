@@ -1,0 +1,23 @@
+<h2>University Table</h2>
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Location</th>
+    <th>Established Year</th>
+    <th>Type</th>
+    <th>Website</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let university of universities">
+    <td>{{ university.id }}</td>
+    <td>{{ university.name }}</td>
+    <td>{{ university.location }}</td>
+    <td>{{ university.establishedYear }}</td>
+    <td>{{ university.type }}</td>
+    <td><a href="{{ university.website }}" target="_blank">{{ university.website }}</a></td>
+  </tr>
+  </tbody>
+</table>
